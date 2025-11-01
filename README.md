@@ -1,27 +1,64 @@
-# ParcialWeb1
+## Descripción general
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.8.
+El proyecto implementa una aplicación Angular estructurada en componentes y servicios, siguiendo las buenas prácticas de separación de responsabilidades y uso de tipado TypeScript.
+Se trabaja con un archivo JSON como fuente de datos simulada, el cual se carga desde el servicio correspondiente.
 
-## Development server
+El desarrollo y las pruebas fueron realizados para la evaluación práctica angular, demostrando la comprensión de los conceptos básicos de ingeniería de software web y el uso del framework.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Pasos para ejecutar el proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Clonar el repositorio o descargar el código fuente:
+```bash
+git clone https://github.com/jurianvilla/parcialWeb1.git
+```
 
-## Build
+Ingresar a la carpeta del proyecto:
+```bashcd ..
+cd parcialWeb1
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Instalar las dependencias:
+```bash
+npm install
+```
 
-## Running unit tests
+Ejecutar la aplicación en modo desarrollo:
+```bash
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Luego, abre tu navegador en http://localhost:4200
+.
 
-## Running end-to-end tests
+### Estructura de recursos (assets)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Dentro de la carpeta src/assets/ se encuentran los recursos estáticos utilizados por la aplicación:
+```bash
+src/
+ └── assets/
+      ├── data/
+      │    └── cars.json     ← Fuente de datos principal
+      └── img/
+           └── frame.jpg         ← Imagen utilizada como banner del sitio
+```
 
-## Further help
+data/: contiene el archivo .json que funciona como fuente de datos para la aplicación.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+img/: almacena imágenes estáticas, incluyendo el banner principal mostrado en la interfaz.
+
+### Ejecución de pruebas
+
+Para ejecutar las pruebas unitarias y validar el comportamiento de los componentes y servicios:
+
+▶️ Ejecutar pruebas con navegador visible
+```bash
+ng test
+```
+⚙️ Ejecutar pruebas en modo headless (sin abrir navegador)
+```bash
+ng test --browsers=ChromeHeadless --watch=false
+```
+
+Los resultados se mostrarán directamente en la terminal.
+
