@@ -1,0 +1,30 @@
+/* Banner styles for car list */
+.banner {
+	max-height: 220px;
+	overflow: hidden;
+}
+.banner-img {
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	display: block;
+}
+
+/* Table header: black background with white text */
+.table thead th,
+.table th {
+	background-color: #000 !important;
+	color: #fff !important;
+	border-color: #222;
+}
+
+/* Statistics list */
+.stats ul {
+  padding-left: 0;
+}
+.stats li {
+  padding: 2px 0;
+}
+
+
+
